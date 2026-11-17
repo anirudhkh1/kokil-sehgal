@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+  Template for public/og-image.jpg (the 1200x630 preview shown when the site
+  is shared on WhatsApp, LinkedIn, X, iMessage, etc.).
+  Regenerate with: python scripts/build_assets.py
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG image</title>
+<style>
+  @font-face { font-family: 'Newsreader'; src: url('../public/fonts/newsreader-latin.woff2') format('woff2'); font-weight: 200 800; }
+  @font-face { font-family: 'Instrument Sans'; src: url('../public/fonts/instrument-sans-latin.woff2') format('woff2'); font-weight: 400 700; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #F7F4EE; color: #1F1D1B;
+    font-family: 'Instrument Sans', sans-serif;
+    display: grid; grid-template-columns: 1fr 440px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .text { padding: 64px 56px 56px 72px; display: flex; flex-direction: column; }
+  .eyebrow { font-size: 18px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C5752; }
+  h1 {
+    margin-top: 28px; font-family: 'Newsreader', serif; font-weight: 400;
+    font-size: 58px; line-height: 1.06; letter-spacing: -0.02em;
+  }
+  .foot { margin-top: auto; display: flex; align-items: baseline; justify-content: space-between; border-top: 1px solid #D6CEC2; padding-top: 22px; }
+  .name { font-family: 'Newsreader', serif; font-size: 32px; letter-spacing: -0.01em; }
+  .url { font-size: 20px; font-weight: 500; color: #A4452C; }
+  .photo { background: url('images/kokil-hero.png') center 30% / cover no-repeat; }
+</style>
+</head>
+<body>
+  <div class="text">
+    <p class="eyebrow">Brand and web designer</p>
+    <h1>Design and websites that make your business look as good as it is.</h1>
+    <div class="foot">
+      <span class="name">Kokil Sehgal</span>
+      <span class="url">kokilsehgal.com</span>
+    </div>
+  </div>
+  <div class="photo" role="img" aria-label="Portrait of Kokil Sehgal"></div>
+</body>
+</html>
