@@ -52,6 +52,23 @@ To add a new project to "Selected work", add its image to `IMAGES` in
 `scripts/build_assets.py`, run the script, then copy one of the `<article class="project">`
 blocks in `index.html`.
 
+## Client previews
+
+Redesign previews for prospective clients live in `public/preview/`, one
+self-contained HTML file per client (the exported file, unchanged):
+
+```
+public/preview/dmi.html   →  https://kokilsehgal.com/preview/dmi
+```
+
+To add one: export the page as a single HTML file, save it as
+`public/preview/<client-name>.html` (lowercase, hyphens, no spaces), then commit and push.
+To take one down: delete the file, then commit and push.
+
+Every page under `/preview/` is sent with `X-Robots-Tag: noindex` (see `vercel.json`),
+so Google won't list these pages. Never add them to `sitemap.xml` or link to them from
+the homepage. Anyone with the link can still open it.
+
 ## Preview locally
 
 ```
