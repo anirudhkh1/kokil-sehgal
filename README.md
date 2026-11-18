@@ -65,6 +65,12 @@ To add one: export the page as a single HTML file, save it as
 `public/preview/<client-name>.html` (lowercase, hyphens, no spaces), then commit and push.
 To take one down: delete the file, then commit and push.
 
+If the export is a folder (`index.html` plus `images/`), combine it into one file first:
+
+```
+python scripts/build_preview.py <source-folder> <client-name>
+```
+
 Every page under `/preview/` is sent with `X-Robots-Tag: noindex` (see `vercel.json`),
 so Google won't list these pages. Never add them to `sitemap.xml` or link to them from
 the homepage. Anyone with the link can still open it.
